@@ -1,12 +1,10 @@
 //your JS code here. If required.
-let obj={
+let student={
 	name:"name",
-	age:"22",
-	city:"city",
 };
 
-function getKeys(obj) {
-	return Object.keys(obj);
+Object.prototype.getKeys=function () {
+	return Object.keys(this)
 }
 
-console.log(getKeys(obj));
+student.getKeys();
